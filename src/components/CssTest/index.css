@@ -1,0 +1,74 @@
+@media screen and ( min-width:760px ){
+  html{
+        font-size: 10px;
+  }
+
+.grid-container{
+  display: grid;
+  grid-template-areas:'title searchinput navgator1 navgator2 navgator3 login regist' ;
+  grid-template-columns: 25rem 15rem auto auto auto 5rem 5rem;
+  grid-template-rows: 6rem;
+  align-items: center;
+  background-color: #dcdcdc;
+}
+
+.title{
+  grid-area:title;
+}
+.searchinput{
+  grid-area:searchinput;
+}
+.navgator1{
+  grid-area:navgator1;
+}
+.navgator2{
+  grid-area:navgator2;
+}
+.navgator3{
+  grid-area:navgator3;
+}
+.login{
+  grid-area:login;
+}
+.regist{
+  grid-area:regist;
+} 
+}
+
+@media screen and ( max-width:760px ){
+  html{
+    font-size: 5px;
+}
+  .grid-container{
+    display: grid;
+    grid-template-areas:'title title title login regist' ;
+    grid-template-columns: auto auto auto 10rem 10rem;
+    grid-template-rows: 12rem;
+    align-items: center;
+    background-color: blueviolet;
+  }
+  
+  .title{
+    grid-area:title;
+    font-size: 3rem;
+    color:white;
+  }
+  .searchinput{
+    display: none;
+  }
+  .navgator1{
+    display: none;
+  }
+  .navgator2{
+    display: none;
+  }
+  .navgator3{
+    display: none;
+  }
+  .login{
+    grid-area:login;
+  }
+  .regist{
+    grid-area:regist;
+  } 
+  }
